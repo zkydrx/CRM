@@ -26,6 +26,12 @@
 		<property name="password" value="root"/>
 	</bean>
 
+    <!--添加该bean用于在部署项目是在weblogic上配置数据源-->
+    <!--<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">-->
+    <!--<property name="jndiName" value="crmPool"/>-->
+    <!--<property name="resourceRef" value="true"/>-->
+    <!--</bean>-->
+
 	<!-- 配置mybatis的sqlSessionFactory -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
