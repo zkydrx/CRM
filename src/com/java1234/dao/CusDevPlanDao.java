@@ -1,0 +1,56 @@
+package com.java1234.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import com.java1234.entity.CusDevPlan;
+
+/**
+ * ??????????Dao???
+ * @author Administrator
+ *
+ */
+public interface CusDevPlanDao {
+
+	/**
+	 * ?????????????
+	 * @param map
+	 * @return
+	 */
+	public List<CusDevPlan> findCusDevPlan(Map<String, Object> map);
+	
+	/**
+	 * ??????????????????
+	 * @param map
+	 * @return
+	 */
+	public Long getTotalCusDevPlan(Map<String, Object> map);
+	
+	/**
+	 * ????????????
+	 * @param cusDevPlan
+	 * @return
+	 */
+	public int addCusDevPlan(CusDevPlan cusDevPlan);
+	
+	/**
+	 * ????????????
+	 * @param cusDevPlan
+	 * @return
+	 */
+	public int updateCusDevPlan(CusDevPlan cusDevPlan);
+	
+	/**
+	 * ?????????????
+	 * @param id
+	 * @return
+	 */
+	public int deleteCusDevPlan(Integer id);
+	
+	/**
+	 * ???id???????
+	 * @param id
+	 * @return
+	 */
+	public CusDevPlan findById(Integer id);
+}

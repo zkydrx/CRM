@@ -1,0 +1,55 @@
+package com.java1234.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import com.java1234.entity.DataDic;
+
+/**
+ * ???????Dao???
+ * @author Administrator
+ *
+ */
+public interface DataDicDao {
+
+	/**
+	 * ?????????²®??
+	 * @param map
+	 * @return
+	 */
+	public List<DataDic> findDataDic(Map<String, Object> map);
+	
+	/**
+	 * ????????????????????
+	 * @return
+	 */
+	public List<DataDic> findAllDataDicName();
+	
+	/**
+	 * ??????????????
+	 * @param map
+	 * @return
+	 */
+	public Long getTotalDataDic(Map<String, Object> map);
+	
+	/**
+	 * ??????????
+	 * @param dataDic
+	 * @return
+	 */
+	public int addDataDic(DataDic dataDic);
+	
+	/**
+	 * ??????????
+	 * @param dataDic
+	 * @return
+	 */
+	public int updateDataDic(DataDic dataDic);
+	
+	/**
+	 * ??????????
+	 * @param id
+	 * @return
+	 */
+	public int deleteDataDic(Integer id);
+}
